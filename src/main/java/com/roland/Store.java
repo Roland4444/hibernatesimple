@@ -49,6 +49,10 @@
             return session.createQuery("SELECT a FROM Employee a", Employee.class).getResultList();
         }
 
+        List getTables(){
+            return session.createQuery("SELECT a FROM INFORMATION_SCHEMA.TABLES WHERE TABLE_TYPE='BASE TABLE'\n", Employee.class).getResultList();
+        }
+
         public static void main(String[] args) {
             Store store = new Store();
             List a = store.findAllEmployee();
