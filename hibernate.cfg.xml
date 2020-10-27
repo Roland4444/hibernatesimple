@@ -1,0 +1,20 @@
+    <?xml version='1.0' encoding='UTF-8'?>  
+    <!DOCTYPE hibernate-configuration PUBLIC  
+              "-//Hibernate/Hibernate Configuration DTD 5.3//EN"  
+              "http://hibernate.sourceforge.net/hibernate-configuration-5.3.dtd">  
+      
+    <hibernate-configuration>  
+      
+        <session-factory>  
+        	<property name="hbm2ddl.auto">update</property>  
+        	<property name="javax.persistence.jdbc.driver" value="org.postgresql.Driver" />
+        	<property name="javax.persistence.jdbc.url" value="jdbc:postgresql://localhost/testdb" />
+        	<property name="javax.persistence.jdbc.user" value="user2" />
+        	<property name="javax.persistence.jdbc.password" value="123" />
+        	<property name="hibernate.show_sql" value="true" />
+      
+        	<property name="hibernate.dialect" value="org.hibernate.dialect.PostgreSQLDialect"/>  
+        	<mapping resource="employee.hbm.xml"/>  
+        </session-factory>  
+      
+    </hibernate-configuration>  
