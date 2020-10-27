@@ -1,0 +1,17 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!DOCTYPE hibernate-configuration PUBLIC
+		"-//Hibernate/Hibernate Configuration DTD 5.3//EN"
+		"http://www.hibernate.org/dtd/hibernate-configuration">
+<hibernate-configuration>
+	<session-factory>
+		<property name="connection.url">jdbc:postgresql://localhost/testdb</property> <!-- BD Mane -->
+		<property name="connection.driver_class">org.postgresql.Driver</property> <!-- DB Driver -->
+		<property name="connection.username">user2</property> <!-- DB User -->
+		<property name="connection.password">123</property> <!-- DB Password -->
+
+		<property name="hibernate.show_sql">true</property>
+		<property name="hibernate.dialect">org.hibernate.dialect.PostgreSQL82Dialect</property>
+		<mapping resource="employee.hbm.xml"/>
+	</session-factory>
+
+</hibernate-configuration>
