@@ -24,11 +24,16 @@
         <artifactId>postgresql</artifactId>
         <version>9.3-1102-jdbc41</version>
     </dependency>
-        <dependency>
-            <groupId>fr.roland</groupId>
-            <artifactId>Executor</artifactId>
-            <version>1.0-SNAPSHOT</version>
-        </dependency>
+    <dependency>
+        <groupId>fr.roland</groupId>
+        <artifactId>Executor</artifactId>
+        <version>1.0-SNAPSHOT</version>
+    </dependency>
+    <dependency>
+        <groupId>org.yaml</groupId>
+        <artifactId>snakeyaml</artifactId>
+        <version>1.21</version>
+    </dependency>
 
 
     <dependency>
@@ -40,6 +45,8 @@
 
 
     </dependencies>
-
-
+    <properties>
+        <maven.compiler.source>11</maven.compiler.source>
+        <maven.compiler.target>11</maven.compiler.target>
+    </properties>
 </project>
