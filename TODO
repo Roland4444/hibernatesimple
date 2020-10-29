@@ -18,4 +18,8 @@ write and delete;
     CREATE TABLE EMPLOYEE(id integer PRIMARY KEY, firstname varchar(40), secondname varchar(40));
     CREATE TABLE EMPLOYEE(id integer PRIMARY KEY, firstname varchar(40), secondname varchar(40));
     }
+
+    HSQLDB rulez?!; GUI datamanager; convert derby to hsqldb; http://dbcopyplugin.sourceforge.net/
     run remote server;
+
+    [parallel task hsqldb hibernate];
