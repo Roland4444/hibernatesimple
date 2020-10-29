@@ -55,7 +55,6 @@ public class StoreTest {
 
     @Test
     public void getTables() throws SQLException {
-
         String url = "jdbc:postgresql://localhost/testdb?user=user2&password=123";///&ssl=true";
         Executor exec = new Executor(url);
         ResultSet Select2 = null;
