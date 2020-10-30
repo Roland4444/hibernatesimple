@@ -3,6 +3,8 @@ package com.roland;
 import fr.roland.DB.Executor;
 import org.junit.Test;
 
+import java.sql.Connection;
+import java.sql.DriverManager;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.util.List;
@@ -43,9 +45,15 @@ public class StoreTest {
 
     @Test
     public void JDBCTest() throws SQLException {
-        String url = "jdbc:postgresql://localhost/testdb?user=user2&password=123";
-        Executor exec = new Executor(url);
-        assertNotEquals(null, exec.getConn());
+       String url = "jdbc:postgresql://localhost/testdb?user=user2&password=123";
+       String hsqldb = "jdbc:hsqldb://home/romanx/Downloads/hsqldb-2.5.1/hsqldb/sample?user=SA&password=";
+       String derbydb = "jdbc:derby:testdb";
+       String user = "user2";
+       String password = "123";
+       Connection conn = DriverManager.getConnection(derbydb, user, password);
+       assertNotEquals(null, conn);
+   //     Executor exec = new Executor(derbydb);
+   //     assertNotEquals(null, exec.getConn());
     }
     
     @Test

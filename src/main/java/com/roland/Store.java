@@ -57,9 +57,11 @@
             Store store = new Store();
             List a = store.findAllEmployee();
             System.out.println(a.size());
-        //    store.clear();
-        //   for (int i=0; i<5000; i++)
-        //       store.insertField(i, "Roman", "Pastushkov");
+            //    store.clear();
+            for (int i = 0; i < a.size(); i++){
+                Employee emp = (Employee) a.get(i);
+                System.out.println(emp.getId() + " :: " +emp.getFirstName()+" :: "+emp.getSecondname());
+            }
             store.close();
         }
     }
