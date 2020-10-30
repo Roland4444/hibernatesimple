@@ -27,3 +27,4 @@ migrate::
     migrate https://github.com/billrobertson42/derby2pg
     https://wiki.postgresql.org/wiki/Converting_from_other_Databases_to_PostgreSQL
     https://github.com/Paxa/postbird
+    https://www.spectralcore.com/trial-thankyou
