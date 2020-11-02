@@ -16,7 +16,7 @@ write and delete;
     SQL::>>
     CONNECT 'jdbc:derby:testdb;create=true';
     CREATE TABLE EMPLOYEE(id integer PRIMARY KEY, firstname varchar(40), secondname varchar(40));
-    CREATE TABLE EMPLOYEE(id integer PRIMARY KEY, firstname varchar(40), secondname varchar(40));
+    CREATE TABLE EMPL(id integer PRIMARY KEY, firstname varchar(40), secondname varchar(40));
     }
 
     HSQLDB rulez?!; GUI datamanager; convert derby to hsqldb; http://dbcopyplugin.sourceforge.net/
@@ -28,3 +28,19 @@ migrate::
     https://wiki.postgresql.org/wiki/Converting_from_other_Databases_to_PostgreSQL
     https://github.com/Paxa/postbird
     https://www.spectralcore.com/trial-thankyou
+
+
+CONNECT to db::
+CONNECT 'jdbc:derby:/home/romanx/db/testdb;create=true';
+export import postgres
+https://karimov.info/blog/databases/postgresql-dump
+
+PGAdmin
+
+Migrate from derby db => POSTGRES;{
+    derby2pg:: java -jar pg<name> <sql name> <schema name> true;
+    cat <filename.sql> | psql -h <localhost> -U <username> <database to import>
+
+
+}
+
