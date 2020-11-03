@@ -31,7 +31,7 @@ migrate::
 
 
 CONNECT to db::
-CONNECT 'jdbc:derby:/home/romanx/db/testdb;create=true';
+                                                                                                                                                                                                                                        CONNECT 'jdbc:derby:/home/romanx/db/testdb;create=true';
 export import postgres
 https://karimov.info/blog/databases/postgresql-dump
 
