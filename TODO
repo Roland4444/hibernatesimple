@@ -53,6 +53,8 @@ mysql> show tables;
 UPDATE
 update psa set check_printed=1 where id =105234;
 
-
+ports:  sudo netstat -tunlp
 
 Binary Logging;; Network;;
+
+INNODB.FOREIGN  cdzpb connectors tables;
