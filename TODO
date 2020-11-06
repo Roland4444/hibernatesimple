@@ -41,6 +41,18 @@ Migrate from derby db => POSTGRES;{
     derby2pg:: java -jar pg<name> <sql name> <schema name> true;
     cat <filename.sql> | psql -h <localhost> -U <username> <database to import>
 
-
+mysql -u root --password="010409AVS"
 }
 
+mysql> SHOW DATABASES;
+
+mysql> use <database>;
+mysql> show columns from <table>;
+
+mysql> show tables;
+UPDATE
+update psa set check_printed=1 where id =105234;
+
+
+
+Binary Logging;; Network;;
